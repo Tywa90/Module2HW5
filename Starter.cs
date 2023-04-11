@@ -53,14 +53,13 @@ namespace LoggerApp
             }
 
             logger.WriteFile();
-            ConfigWork();
-        }
-
-        // Work on app.config and serialize
-        public void ConfigWork()
-        {
-            var configFile = File.ReadAllText("D:\\project\\a-level\\Module2HW5\\LoggerApp\\jsconfig1.json");
+            var path = "D:\\project\\a-level\\Module2HW5\\LoggerApp\\jsconfig1.json";
+            var configFile = File.ReadAllText(path);
             var config = JsonConvert.DeserializeObject<Config>(configFile);
+            
+            Console.WriteLine(config.Logger.LineSeparator);
+            Console.WriteLine(config.Logger.TimeFormat);
+
         }
     }
 }

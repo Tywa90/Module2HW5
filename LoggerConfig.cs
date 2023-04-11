@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace LoggerApp
 {
-    [Serializable]
-    public class Config
-    {
-        public LoggerConfig Logger { get; set; }
-    }
-    public class LoggerConfig
+
+    public class LoggerConfig1
     {
         public int LineSeparator { get; set; }
         public string TimeFormat { get; set; }
