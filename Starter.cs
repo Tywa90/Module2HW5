@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
@@ -52,6 +53,14 @@ namespace LoggerApp
             }
 
             logger.WriteFile();
+            ConfigWork();
+        }
+
+        // Work on app.config and serialize
+        public void ConfigWork()
+        {
+            var configFile = File.ReadAllText("D:\\project\\a-level\\Module2HW5\\LoggerApp\\jsconfig1.json");
+            var config = JsonConvert.DeserializeObject<Config>(configFile);
         }
     }
 }
