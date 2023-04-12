@@ -56,7 +56,7 @@ namespace LoggerApp.Services
 
             var fullDate = DateTime.Now;
             string timeString = fullDate.ToLongTimeString();
-            string dateString = fullDate.ToLongDateString();
+            string dateString = fullDate.ToShortDateString();
             timeString = timeString.Replace(':', '.');
 
             string fileName = $"{timeString} {dateString}";
