@@ -73,14 +73,7 @@ namespace LoggerApp.Services
 
             if (filesArray.Length > 3)
             {
-                //int j = 0;
-                //string[] tempArr = new string[3];
-                //for (int i = filesArray.Length; i > filesArray.Length - 3; i--)
-                //{
-                //    tempArr[j] = filesArray[i-1];
-                //    j++;
-
-                //}
+               
                 int counterToDelFiles = filesArray.Length - 3;
                 for (int i = 0; i < counterToDelFiles; i++)
                 {
