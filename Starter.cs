@@ -14,7 +14,6 @@ namespace LoggerApp
         public void Run()
         {
             Actions action = new Actions();
-            //Logger logger = new Logger();
 
             for (int i = 0; i < 100; i++)
             {

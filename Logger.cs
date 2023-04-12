@@ -11,14 +11,15 @@ namespace LoggerApp
     internal class Logger
     {
         private static string logConsole = string.Empty;
-        private static StringBuilder sb = new StringBuilder();
+        private static StringBuilder _sb = new StringBuilder();
+        public static StringBuilder Sb { get { return _sb; } }
 
         public static void DisplayLog(LogType type, string message)
         {
             var date = DateTime.Now.ToLongTimeString();
             logConsole = date + " : " + type + " : " + message;
             Console.WriteLine(logConsole);
-            sb.Append(logConsole + "\n");
+            _sb.Append(logConsole + "\n");
         }
 
         public static void RunFileServices ()

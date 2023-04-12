@@ -18,6 +18,7 @@ namespace LoggerApp.Services
             SerializationSample();
             DirectoryPath();
             DirectoryCreate();
+            FileCreate();
         }
         public static void SerializationSample()
         {
@@ -48,10 +49,20 @@ namespace LoggerApp.Services
                 Console.WriteLine("Enter");
                 Directory.CreateDirectory(BackUpDirPath);
             }
-            //var textLog = sb.ToString();
-
-            //File.WriteAllText("log.txt", textLog);
-
         }
+        public static void FileCreate()
+        {
+            var textLog = Logger.Sb.ToString();
+
+            var fullDate = DateTime.Now;
+            string timeString = fullDate.ToLongTimeString();
+            string dateString = fullDate.ToLongDateString();
+            timeString = timeString.Replace(':', '.');
+
+            string fileName = $"{timeString} {dateString}";
+
+            File.WriteAllText($"{LogDirPath}\\{fileName}.txt", textLog);
+        }
+
     }
 }
