@@ -1,9 +1,9 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace LoggerApp.Services
 {
@@ -20,16 +20,13 @@ namespace LoggerApp.Services
             DirectoryCheck();
             FileCreate();
         }
-        public static void SerializationSample()
+        private static void SerializationSample()
         {
             var path = "Services\\jsconfig1.json";
             var configFile = File.ReadAllText(path);
             Config = JsonConvert.DeserializeObject<Config>(configFile);
-
-            Console.WriteLine(Config.Logger.LineSeparator);
-            Console.WriteLine(Config.Logger.TimeFormat);
         }
-        public static void DirectoryPath()
+        private static void DirectoryPath()
         {
             LogDirPath = Config.Logger.DirectoryPath;
             BackUpDirPath = Config.Logger.BackUpDirectoryPath;
@@ -37,7 +34,7 @@ namespace LoggerApp.Services
             LogDirPath = LogDirPath.Trim('/');
             BackUpDirPath = BackUpDirPath.Trim('/');
         }
-        public static void DirectoryCheck()
+        private static void DirectoryCheck()
         {
             if (!Directory.Exists(LogDirPath))
             {
@@ -50,7 +47,7 @@ namespace LoggerApp.Services
                 Directory.CreateDirectory(BackUpDirPath);
             }
         }
-        public static void FileCreate()
+        private static void FileCreate()
         {
             var textLog = Logger.Sb.ToString();
 
@@ -72,8 +69,7 @@ namespace LoggerApp.Services
             string[] filesArray = Directory.GetFiles(dirName);
 
             if (filesArray.Length > 3)
-            {
-               
+            {   
                 int counterToDelFiles = filesArray.Length - 3;
                 for (int i = 0; i < counterToDelFiles; i++)
                 {
@@ -81,6 +77,5 @@ namespace LoggerApp.Services
                 }
             }
         }
-
     }
 }

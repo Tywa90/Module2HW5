@@ -8,11 +8,14 @@ using LoggerApp.Services;
 
 namespace LoggerApp
 {
-    internal class Logger
+    public class Logger
     {
         private static string logConsole = string.Empty;
         private static StringBuilder _sb = new StringBuilder();
-        public static StringBuilder Sb { get { return _sb; } }
+        public static StringBuilder Sb
+        {
+            get { return _sb; }
+        }
 
         public static void DisplayLog(LogType type, string message)
         {
@@ -22,7 +25,7 @@ namespace LoggerApp
             _sb.Append(logConsole + "\n");
         }
 
-        public static void RunFileServices ()
+        public static void RunFileServices()
         {
             FileService.Run();
         }

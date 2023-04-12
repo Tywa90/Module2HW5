@@ -19,14 +19,6 @@ namespace LoggerApp
             _message2 = "Skipped logic in method";
             _message3 = "I broke a logic";
         }
-        public string Message2
-        {
-            get { return _message2; }
-        }
-        public string Message3
-        {
-            get { return _message3; }
-        }
 
         public bool Method1()
         {

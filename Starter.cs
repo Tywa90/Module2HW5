@@ -1,15 +1,15 @@
-﻿using LoggerApp.Services;
-using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using LoggerApp.Services;
+using Newtonsoft.Json;
 
 namespace LoggerApp
 {
-    internal class Starter
+    public class Starter
     {
         public void Run()
         {
@@ -17,7 +17,7 @@ namespace LoggerApp
 
             for (int i = 0; i < 100; i++)
             {
-                int choice = new Random().Next(1, 4); //поменять на 4
+                int choice = new Random().Next(1, 4);
                 switch (choice)
                 {
                     case 1:
@@ -33,6 +33,7 @@ namespace LoggerApp
                             string warningMsg = $"Action got this custom Exception : {bEx.Message}";
                             Logger.DisplayLog(LogType.Warning, warningMsg);
                         }
+
                         break;
                     case 3:
                         try
