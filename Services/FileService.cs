@@ -62,6 +62,8 @@ namespace LoggerApp.Services
             string fileName = $"{timeString} {dateString}";
 
             File.WriteAllText($"{LogDirPath}\\{fileName}.txt", textLog);
+            File.WriteAllText($"{BackUpDirPath}\\{fileName}.txt", textLog);
+
         }
 
     }
