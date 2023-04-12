@@ -1,0 +1,100 @@
+13:05:12 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:12 : Info : Start method
+13:05:12 : Error : Action failed by а reason: I broke a logic
+13:05:12 : Error : Action failed by а reason: I broke a logic
+13:05:12 : Error : Action failed by а reason: I broke a logic
+13:05:12 : Error : Action failed by а reason: I broke a logic
+13:05:12 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:12 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:12 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:12 : Info : Start method
+13:05:12 : Info : Start method
+13:05:12 : Error : Action failed by а reason: I broke a logic
+13:05:12 : Error : Action failed by а reason: I broke a logic
+13:05:12 : Info : Start method
+13:05:12 : Error : Action failed by а reason: I broke a logic
+13:05:12 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:12 : Error : Action failed by а reason: I broke a logic
+13:05:12 : Error : Action failed by а reason: I broke a logic
+13:05:12 : Info : Start method
+13:05:12 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:12 : Error : Action failed by а reason: I broke a logic
+13:05:12 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:12 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:12 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:12 : Info : Start method
+13:05:12 : Info : Start method
+13:05:12 : Info : Start method
+13:05:13 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:13 : Info : Start method
+13:05:13 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Info : Start method
+13:05:13 : Info : Start method
+13:05:13 : Info : Start method
+13:05:13 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Info : Start method
+13:05:13 : Info : Start method
+13:05:13 : Info : Start method
+13:05:13 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Info : Start method
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:13 : Info : Start method
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Info : Start method
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:13 : Info : Start method
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Info : Start method
+13:05:13 : Info : Start method
+13:05:13 : Info : Start method
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Info : Start method
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:13 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:13 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:13 : Info : Start method
+13:05:13 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:13 : Info : Start method
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Info : Start method
+13:05:13 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:13 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:13 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Info : Start method
+13:05:13 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Error : Action failed by а reason: I broke a logic
+13:05:13 : Info : Start method
+13:05:13 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:13 : Info : Start method
+13:05:13 : Warning : Action got this custom Exception : Skipped logic in method
+13:05:13 : Info : Start method
+13:05:13 : Info : Start method
+13:05:13 : Info : Start method
+13:05:13 : Error : Action failed by а reason: I broke a logic
