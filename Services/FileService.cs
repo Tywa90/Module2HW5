@@ -9,22 +9,49 @@ namespace LoggerApp.Services
 {
     public class FileService
     {
+        public static Config Config { get; set; }
+        public static string LogDirPath { get; set; }
+        public static string BackUpDirPath { get; set; }
 
+        public static void Run()
+        {
+            SerializationSample();
+            DirectoryPath();
+            DirectoryCreate();
+        }
         public static void SerializationSample()
         {
             var path = "Services\\jsconfig1.json";
             var configFile = File.ReadAllText(path);
-            var config = JsonConvert.DeserializeObject<Config>(configFile);
+            Config = JsonConvert.DeserializeObject<Config>(configFile);
 
-            Console.WriteLine(config.Logger.LineSeparator);
-            Console.WriteLine(config.Logger.TimeFormat);
+            Console.WriteLine(Config.Logger.LineSeparator);
+            Console.WriteLine(Config.Logger.TimeFormat);
         }
-        public void WriteFile(StringBuilder sb)
+        public static void DirectoryPath()
         {
-            var textLog = sb.ToString();
+            LogDirPath = Config.Logger.DirectoryPath;
+            BackUpDirPath = Config.Logger.BackUpDirectoryPath;
 
-            File.WriteAllText("log.txt", textLog);
-           
+            LogDirPath = LogDirPath.Trim('/');
+            BackUpDirPath = BackUpDirPath.Trim('/');
+        }
+        public static void DirectoryCreate()
+        {
+            if (!Directory.Exists(LogDirPath))
+            {
+                Console.WriteLine("Enter");
+                Directory.CreateDirectory(LogDirPath);
+            }
+            if (!Directory.Exists(BackUpDirPath))
+            {
+                Console.WriteLine("Enter");
+                Directory.CreateDirectory(BackUpDirPath);
+            }
+            //var textLog = sb.ToString();
+
+            //File.WriteAllText("log.txt", textLog);
+
         }
     }
 }

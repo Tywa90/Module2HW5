@@ -20,6 +20,10 @@ namespace LoggerApp
             Console.WriteLine(logConsole);
             sb.Append(logConsole + "\n");
         }
-        
+
+        public static void RunFileServices ()
+        {
+            FileService.Run();
+        }
     }
 }

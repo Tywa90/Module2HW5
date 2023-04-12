@@ -14,7 +14,7 @@ namespace LoggerApp
         public void Run()
         {
             Actions action = new Actions();
-            Logger logger = new Logger();
+            //Logger logger = new Logger();
 
             for (int i = 0; i < 100; i++)
             {
@@ -53,9 +53,7 @@ namespace LoggerApp
                 }
             }
 
-            FileService.SerializationSample();
-           
-
+            Logger.RunFileServices();
         }
     }
 }
