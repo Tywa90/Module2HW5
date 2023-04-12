@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using LoggerApp.Services;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -52,13 +53,8 @@ namespace LoggerApp
                 }
             }
 
-            logger.WriteFile();
-            var path = "D:\\project\\a-level\\Module2HW5\\LoggerApp\\jsconfig1.json";
-            var configFile = File.ReadAllText(path);
-            var config = JsonConvert.DeserializeObject<Config>(configFile);
-            
-            Console.WriteLine(config.Logger.LineSeparator);
-            Console.WriteLine(config.Logger.TimeFormat);
+            FileService.SerializationSample();
+           
 
         }
     }

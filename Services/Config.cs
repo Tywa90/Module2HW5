@@ -4,10 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LoggerApp
+namespace LoggerApp.Services
 {
-
-    public class LoggerConfig1
+    [Serializable]
+    public class Config
+    {
+        public LoggerConfig Logger { get; set; }
+    }
+    public class LoggerConfig
     {
         public int LineSeparator { get; set; }
         public string TimeFormat { get; set; }

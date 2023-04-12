@@ -11,7 +11,6 @@ namespace LoggerApp
         public BusinessException(string? message)
             : base(message)
         {
-            //Logger.DisplayLog(LogType.Warning, message);
         }
     }
 }

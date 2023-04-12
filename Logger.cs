@@ -4,6 +4,7 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using LoggerApp.Services;
 
 namespace LoggerApp
 {
@@ -19,12 +20,6 @@ namespace LoggerApp
             Console.WriteLine(logConsole);
             sb.Append(logConsole + "\n");
         }
-
-        public void WriteFile()
-        {
-            var textLog = sb.ToString();
-
-            File.WriteAllText("log.txt", textLog);
-        }
+        
     }
 }
