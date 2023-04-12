@@ -17,7 +17,7 @@ namespace LoggerApp.Services
         {
             SerializationSample();
             DirectoryPath();
-            DirectoryCreate();
+            DirectoryCheck();
             FileCreate();
         }
         public static void SerializationSample()
@@ -37,7 +37,7 @@ namespace LoggerApp.Services
             LogDirPath = LogDirPath.Trim('/');
             BackUpDirPath = BackUpDirPath.Trim('/');
         }
-        public static void DirectoryCreate()
+        public static void DirectoryCheck()
         {
             if (!Directory.Exists(LogDirPath))
             {
@@ -64,6 +64,29 @@ namespace LoggerApp.Services
             File.WriteAllText($"{LogDirPath}\\{fileName}.txt", textLog);
             File.WriteAllText($"{BackUpDirPath}\\{fileName}.txt", textLog);
 
+            FilesCounter(LogDirPath);
+            FilesCounter(BackUpDirPath);
+        }
+        private static void FilesCounter(string dirName)
+        {
+            string[] filesArray = Directory.GetFiles(dirName);
+
+            if (filesArray.Length > 3)
+            {
+                //int j = 0;
+                //string[] tempArr = new string[3];
+                //for (int i = filesArray.Length; i > filesArray.Length - 3; i--)
+                //{
+                //    tempArr[j] = filesArray[i-1];
+                //    j++;
+
+                //}
+                int counterToDelFiles = filesArray.Length - 3;
+                for (int i = 0; i < counterToDelFiles; i++)
+                {
+                    File.Delete(filesArray[i]);
+                }
+            }
         }
 
     }
