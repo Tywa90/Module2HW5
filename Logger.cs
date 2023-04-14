@@ -19,7 +19,7 @@ namespace LoggerApp
 
         public static void DisplayLog(LogType type, string message)
         {
-            var date = DateTime.Now.ToLongTimeString();
+            var date = DateTime.Now.ToString("HH:mm:ss");
             logConsole = date + " : " + type + " : " + message;
             Console.WriteLine(logConsole);
             _sb.Append(logConsole + "\n");

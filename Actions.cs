@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LoggerApp
 {
-    internal class Actions
+    public class Actions
     {
         private readonly string _message1;
         private readonly string _message2;
