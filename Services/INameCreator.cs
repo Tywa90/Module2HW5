@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using LoggerApp.Services;
 
-namespace LoggerApp
+namespace LoggerApp.Services
 {
     public interface INameCreator
     {
